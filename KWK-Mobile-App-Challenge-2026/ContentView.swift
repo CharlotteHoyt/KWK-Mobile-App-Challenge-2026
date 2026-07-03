@@ -21,13 +21,13 @@ struct ContentView: View {
                 Color(darkGreen)
                     .ignoresSafeArea()
                 VStack {
-                    Image("icon")
+                    Image("icon2")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                        .padding(.bottom, 20)
+                       // .padding(.bottom, 20)
                     
-                    Text("Welcome!")
+                    Text("Slow Stems")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(pink)

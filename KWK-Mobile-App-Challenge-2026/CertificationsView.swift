@@ -20,53 +20,90 @@ struct CertificationsView: View {
                 Color(darkGreen)
                     .ignoresSafeArea()
                 VStack {
+                    Image("rainforestAlliance")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                                        
                     Text("Rainforest Alliance")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(pink)
-                    
-                    Link(destination: URL(string: "https://google.com")!) {
-                        Text("Learn More Here")
+                        .padding(.bottom, -5)
+                     
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
                             .foregroundColor(cream)
+                            .padding(15)
                     }
+                    .background(yellow)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 20)
+                    
+                    Image("veriflora")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
                     
                     Text("Veriflora")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(pink)
+                        .padding(.bottom, -5)
                     
-                    Link(destination: URL(string: "https://google.com")!) {
-                        Text("Learn More Here")
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
                             .foregroundColor(cream)
+                            .padding(15)
                     }
+                    .background(yellow)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 20)
+                                        
+                    Image("fairTrade")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
                     
-                    Text("Fairtrade")
+                    Text("Fair Trade")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(pink)
+                        .padding(.bottom, -5)
                     
-                    Link(destination: URL(string: "https://google.com")!) {
-                        Text("Learn More Here")
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
                             .foregroundColor(cream)
+                            .padding(15)
                     }
+                    .background(yellow)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 20)
+                    
+                    Image("florverde")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                    
                     
                     Text("Florverde")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(pink)
+                        .padding(.bottom, -5)
                     
-                    Link(destination: URL(string: "https://google.com")!) {
-                        Text("Learn More Here")
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
                             .foregroundColor(cream)
+                            .padding(15)
                     }
+                    .background(yellow)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 20)
                     
                 
                 }

@@ -21,7 +21,7 @@ struct FlowersView: View {
                 .fontWeight(.bold)
                 .foregroundColor(darkGreen)
         }
-        .padding()
+        .padding(5)
     }
 }
 

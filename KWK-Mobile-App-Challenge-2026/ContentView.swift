@@ -65,7 +65,7 @@ struct ContentView: View {
                     
                     .padding(.bottom, 5)
                 }
-                .padding()
+                .padding(5)
             }
         }
     }

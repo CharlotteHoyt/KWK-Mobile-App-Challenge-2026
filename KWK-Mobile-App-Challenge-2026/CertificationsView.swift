@@ -24,24 +24,39 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    HStack {
-                        Text("Rainforest Alliance")
-                            .font(.system(size: 28))
-                            .fontWeight(.bold)
-                            .foregroundColor(pink)
-                            .padding(.bottom, -5)
-                        
-                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                            Text("Learn More")
-                                .font(.system(size: 14))
-                                .foregroundColor(cream)
-                                .padding(10)
-                        }
-                        .background(yellow)
-                        .cornerRadius(15)
+                    Text("Rainforest Alliance")
+                        .font(.system(size: 28))
                         .fontWeight(.bold)
-                        
+                        .foregroundColor(pink)
+                        .padding(.bottom, -5)
+                    
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
+                            .font(.system(size: 14))
+                            .foregroundColor(cream)
+                            .padding(10)
                     }
+                    .background(yellow)
+                    .cornerRadius(15)
+                    .fontWeight(.bold)
+                    
+//                    HStack {
+//                        Text("Rainforest Alliance")
+//                            .font(.system(size: 28))
+//                            .fontWeight(.bold)
+//                            .foregroundColor(pink)
+//                            .padding(.bottom, -5)
+//                        
+//                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                            Text("Learn More")
+//                                .font(.system(size: 14))
+//                                .foregroundColor(cream)
+//                                .padding(10)
+//                        }
+//                        .background(yellow)
+//                        .cornerRadius(15)
+//                        .fontWeight(.bold)
+//                    }
                                         
 //                    Text("Rainforest Alliance")
 //                        .font(.title)
@@ -65,24 +80,39 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    HStack {
-                        Text("Veriflora")
-                            .font(.system(size: 28))
-                            .fontWeight(.bold)
-                            .foregroundColor(pink)
-                            .padding(.bottom, -5)
-                        
-                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                            Text("Learn More")
-                                .font(.system(size: 14))
-                                .foregroundColor(cream)
-                                .padding(10)
-                        }
-                        .background(yellow)
-                        .cornerRadius(15)
+                    Text("Veriflora")
+                        .font(.system(size: 28))
                         .fontWeight(.bold)
-                        
+                        .foregroundColor(pink)
+                        .padding(.bottom, -5)
+                    
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
+                            .font(.system(size: 14))
+                            .foregroundColor(cream)
+                            .padding(10)
                     }
+                    .background(yellow)
+                    .cornerRadius(15)
+                    .fontWeight(.bold)
+                    
+//                    HStack {
+//                        Text("Veriflora")
+//                            .font(.system(size: 28))
+//                            .fontWeight(.bold)
+//                            .foregroundColor(pink)
+//                            .padding(.bottom, -5)
+//                        
+//                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                            Text("Learn More")
+//                                .font(.system(size: 14))
+//                                .foregroundColor(cream)
+//                                .padding(10)
+//                        }
+//                        .background(yellow)
+//                        .cornerRadius(15)
+//                        .fontWeight(.bold)
+//                    }
                     
 //                    Text("Veriflora")
 //                        .font(.title)
@@ -105,24 +135,39 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    HStack {
-                        Text("Fair Trade")
-                            .font(.system(size: 28))
-                            .fontWeight(.bold)
-                            .foregroundColor(pink)
-                            .padding(.bottom, -5)
-                        
-                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                            Text("Learn More")
-                                .font(.system(size: 14))
-                                .foregroundColor(cream)
-                                .padding(10)
-                        }
-                        .background(yellow)
-                        .cornerRadius(15)
+                    Text("Fair Trade")
+                        .font(.system(size: 28))
                         .fontWeight(.bold)
-                        
+                        .foregroundColor(pink)
+                        .padding(.bottom, -5)
+                    
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
+                            .font(.system(size: 14))
+                            .foregroundColor(cream)
+                            .padding(10)
                     }
+                    .background(yellow)
+                    .cornerRadius(15)
+                    .fontWeight(.bold)
+                    
+//                    HStack {
+//                        Text("Fair Trade")
+//                            .font(.system(size: 28))
+//                            .fontWeight(.bold)
+//                            .foregroundColor(pink)
+//                            .padding(.bottom, -5)
+//                        
+//                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                            Text("Learn More")
+//                                .font(.system(size: 14))
+//                                .foregroundColor(cream)
+//                                .padding(10)
+//                        }
+//                        .background(yellow)
+//                        .cornerRadius(15)
+//                        .fontWeight(.bold)
+//                    }
                     
 //                    Text("Fair Trade")
 //                        .font(.title)
@@ -145,25 +190,39 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    HStack {
-                        Text("Florverde")
-                            .font(.system(size: 28))
-                            .fontWeight(.bold)
-                            .foregroundColor(pink)
-                            .padding(.bottom, -5)
-                        
-                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                            Text("Learn More")
-                                .font(.system(size: 14))
-                                .foregroundColor(cream)
-                                .padding(10)
-                        }
-                        .background(yellow)
-                        .cornerRadius(15)
+                    Text("Florverde")
+                        .font(.system(size: 28))
                         .fontWeight(.bold)
-                        
-                    }
+                        .foregroundColor(pink)
+                        .padding(.bottom, -5)
                     
+                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                        Text("Learn More")
+                            .font(.system(size: 14))
+                            .foregroundColor(cream)
+                            .padding(10)
+                    }
+                    .background(yellow)
+                    .cornerRadius(15)
+                    .fontWeight(.bold)
+                    
+//                    HStack {
+//                        Text("Florverde")
+//                            .font(.system(size: 28))
+//                            .fontWeight(.bold)
+//                            .foregroundColor(pink)
+//                            .padding(.bottom, -5)
+//                        
+//                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                            Text("Learn More")
+//                                .font(.system(size: 14))
+//                                .foregroundColor(cream)
+//                                .padding(10)
+//                        }
+//                        .background(yellow)
+//                        .cornerRadius(15)
+//                        .fontWeight(.bold)
+//                    }
                     
 //                    Text("Florverde")
 //                        .font(.title)
@@ -184,7 +243,7 @@ struct CertificationsView: View {
                     
                 
                 }
-                .padding()
+               .padding(5)
             }
         }
     }

@@ -26,9 +26,10 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                                         
                     Text("Slow Stems")
-                        .font(.system(size: 40))
+                        .font(.custom("Shrikhand-Regular", size: 50))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
+                        .padding(.bottom)
                     
                     NavigationLink(destination: FlowersView()) {
                         Text ("Find Sustainable Flowers")

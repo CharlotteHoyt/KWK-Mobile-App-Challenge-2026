@@ -25,7 +25,7 @@ struct CertificationsView: View {
                         .aspectRatio(contentMode: .fit)
                     
                     Text("Rainforest Alliance")
-                        .font(.system(size: 28))
+                        .font(.custom("Shrikhand-Regular", size: 28))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
                         .padding(.bottom, -5)
@@ -47,7 +47,7 @@ struct CertificationsView: View {
                         .aspectRatio(contentMode: .fit)
                     
                     Text("Veriflora")
-                        .font(.system(size: 28))
+                        .font(.custom("Shrikhand-Regular", size: 28))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
                         .padding(.bottom, -5)
@@ -69,7 +69,7 @@ struct CertificationsView: View {
                         .aspectRatio(contentMode: .fit)
                     
                     Text("Fair Trade")
-                        .font(.system(size: 28))
+                        .font(.custom("Shrikhand-Regular", size: 28))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
                         .padding(.bottom, -5)
@@ -91,7 +91,7 @@ struct CertificationsView: View {
                         .aspectRatio(contentMode: .fit)
                     
                     Text("Florverde")
-                        .font(.system(size: 28))
+                        .font(.custom("Shrikhand-Regular", size: 28))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
                         .padding(.bottom, -5)

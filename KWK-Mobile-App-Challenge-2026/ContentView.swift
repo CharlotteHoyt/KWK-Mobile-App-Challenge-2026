@@ -24,46 +24,47 @@ struct ContentView: View {
                     Image("icon2")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
-                    
-                       // .padding(.bottom, 20)
-                    
+                                        
                     Text("Slow Stems")
-                        .font(.title)
+                        .font(.system(size: 40))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
                     
                     NavigationLink(destination: FlowersView()) {
                         Text ("Find Sustainable Flowers")
-                            .padding(20)
-                            .background(cream)
-                            .cornerRadius(25)
-                            .fontWeight(.bold)
+                            .font(.system(size: 18))
                             .foregroundColor(darkGreen)
+                            .padding(15)
                     }
+                    .background(cream)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 10)
                     
                     NavigationLink(destination: CertificationsView()) {
                         Text ("Sustainability Certifications to Look For")
-                            .padding(20)
-                            .background(cream)
-                            .cornerRadius(25)
-                            .fontWeight(.bold)
+                            .font(.system(size: 18))
                             .foregroundColor(darkGreen)
+                            .padding(15)
                     }
+                    .background(cream)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    .padding(.bottom, 10)
                     
                     NavigationLink(destination: AboutView()) {
                         Text ("About the Slow Flowers Movement")
-                            .padding(20)
-                            .background(cream)
-                            .cornerRadius(25)
-                            .fontWeight(.bold)
+                            .font(.system(size: 18))
                             .foregroundColor(darkGreen)
+                            .padding(15)
                     }
+                    .background(cream)
+                    .cornerRadius(20)
+                    .fontWeight(.bold)
                     
-                    .padding(.bottom, 5)
+                    // .padding(.bottom, 10)
                 }
                 .padding(5)
             }

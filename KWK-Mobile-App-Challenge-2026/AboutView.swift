@@ -1,13 +1,13 @@
 //
-//  FlowersView.swift
+//  AboutView.swift
 //  KWK-Mobile-App-Challenge-2026
 //
-//  Created by Charlotte Hoyt on 7/2/26.
+//  Created by Charlotte Hoyt on 7/3/26.
 //
 
 import SwiftUI
 
-struct FlowersView: View {
+struct AboutView: View {
     let darkGreen = Color(red: 46 / 255.0, green: 111 / 255.0, blue: 64 / 255.0)
     let lightGreen = Color(red: 155 / 255.0, green: 210 / 255.0, blue: 64 / 255.0)
     let yellow = Color(red: 246 / 255.0, green: 173 / 255.0, blue: 6 / 255.0)
@@ -16,7 +16,7 @@ struct FlowersView: View {
     
     var body: some View {
         VStack {
-            Text("Find Sustainable Flowers")
+            Text("About")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(darkGreen)
@@ -26,5 +26,5 @@ struct FlowersView: View {
 }
 
 #Preview {
-    FlowersView()
+    AboutView()
 }

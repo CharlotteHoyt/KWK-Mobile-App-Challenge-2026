@@ -15,13 +15,24 @@ struct AboutView: View {
     let cream = Color(red: 247 / 255.0, green: 247 / 255.0, blue: 231 / 255.0)
     
     var body: some View {
-        VStack {
-            Text("About")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(darkGreen)
+        ZStack {
+            Color(darkGreen)
+                .ignoresSafeArea()
+            VStack {
+                Text("About the Slow Flowers Movement")
+                    .font(.custom("Shrikhand-Regular", size: 36))
+                    .fontWeight(.bold)
+                    .foregroundColor(pink)
+                    .padding(.bottom)
+                    .multilineTextAlignment(.center)
+                
+                Text("Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.")
+                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                    .foregroundColor(cream)
+                    .padding(15)
+            }
+            .padding(5)
         }
-        .padding(5)
     }
 }
 

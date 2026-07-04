@@ -34,39 +34,34 @@ struct ContentView: View {
                     
                     NavigationLink(destination: FlowersView()) {
                         Text ("Find Sustainable Flowers")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 16))
                             .foregroundColor(darkGreen)
                             .padding(15)
                     }
                     .background(cream)
                     .cornerRadius(20)
-                     // .fontWeight(.bold)
                     
                     .padding(.bottom, 10)
                     
                     NavigationLink(destination: CertificationsView()) {
                         Text ("Sustainability Certifications to Look For")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 16))
                             .foregroundColor(darkGreen)
                             .padding(15)
                     }
                     .background(cream)
                     .cornerRadius(20)
-                    // .fontWeight(.bold)
                     
                     .padding(.bottom, 10)
                     
                     NavigationLink(destination: AboutView()) {
                         Text ("About the Slow Flowers Movement")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 16))
                             .foregroundColor(darkGreen)
                             .padding(15)
                     }
                     .background(cream)
                     .cornerRadius(20)
-                    // .fontWeight(.bold)
-                    
-                    // .padding(.bottom, 10)
                 }
                 .padding(5)
             }

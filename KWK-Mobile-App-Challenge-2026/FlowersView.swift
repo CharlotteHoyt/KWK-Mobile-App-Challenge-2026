@@ -23,10 +23,11 @@ struct FlowersView: View {
                 .ignoresSafeArea()
             VStack {
                 Text("Find Sustainable Flowers")
-                    .font(.custom("Shrikhand-Regular", size: 28))
+                    .font(.custom("Shrikhand-Regular", size: 36))
                     .fontWeight(.bold)
                     .foregroundColor(pink)
                     .padding(.bottom)
+                    .multilineTextAlignment(.center)
                 
                 Text("What Region of the US Do You Live In?")
                     .font(.custom("BeVietnamPro-SemiBold", size: 18))
@@ -78,6 +79,9 @@ struct FlowersView: View {
                 .background(yellow)
                 .cornerRadius(15)
                 
+                Spacer()
+                    .frame(height: 50)
+                
                 Button("Suggest Flowers") {
                     if region == 0 {
                         flowerRecommendation = "Oops! Please pick a region and try again."
@@ -116,7 +120,6 @@ struct FlowersView: View {
                 .padding(10)
                 .background(cream)
                 .cornerRadius(15)
-                
             }
             .padding(5)
         }

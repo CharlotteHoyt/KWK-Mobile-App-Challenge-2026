@@ -107,8 +107,6 @@ struct CertificationsView: View {
                     .background(yellow)
                     .cornerRadius(15)
                     .fontWeight(.bold)
-                    
-                    // .padding(.bottom, 20)
                 }
                .padding(5)
             }

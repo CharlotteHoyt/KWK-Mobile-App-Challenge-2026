@@ -27,7 +27,7 @@ struct AboutView: View {
                         .padding(.bottom, -10)
                         .multilineTextAlignment(.center)
                     
-                    Text("Many people see flowers as a \"gift from nature.\" Flower bouquets are ingrained in many human celebrations, from weddings and birthdays to Valentine’s Day and Mother’s Day. But, cut flower stems have a hidden and heavy social and environmental impact.")
+                    Text("Many people see flowers as a \"gift from nature.\" Flower bouquets are ingrained in many human celebrations, from weddings and birthdays to Valentine's Day and Mother's Day. But, cut flower stems have a hidden and heavy social and environmental impact.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)
                         .padding(.horizontal, 15)
@@ -39,24 +39,6 @@ struct AboutView: View {
                         .foregroundColor(cream)
                         .padding(.horizontal, 15)
                         .padding(.vertical, 10)
-                    
-//                    Text(". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.")
-//                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
-//                        .foregroundColor(yellow)
-//                        .padding(.horizontal, 15)
-//                        .padding(.vertical, 10)
-                    
-//                    Text("°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･")
-//                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
-//                        .foregroundColor(yellow)
-//                        .padding(.horizontal, 15)
-//                        .padding(.vertical, 10)
-                    
-//                    Text("°❀.ೃ࿔*°❀.ೃ࿔*")
-//                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
-//                        .foregroundColor(yellow)
-//                        .padding(.horizontal, 15)
-//                        .padding(.vertical, 10)
                     
                     Text("✿ ✿ ✿")
                         .font(.custom("BeVietnamPro-SemiBold", size: 26))
@@ -70,7 +52,7 @@ struct AboutView: View {
                         .padding(.horizontal, 15)
                         .padding(.vertical, 10)
                     
-                    Text("Since ornamental flowers are not as closely regulated as food, they can be treated with harsh chemicals many people wouldn’t be okay eating. These chemicals pose health risks to farmers, consumers, and wildlife near the flower farms.")
+                    Text("Since ornamental flowers are not as closely regulated as food, they can be treated with harsh chemicals many people wouldn't be okay eating. These chemicals pose health risks to farmers, consumers, and wildlife near the flower farms.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)
                         .padding(.horizontal, 15)

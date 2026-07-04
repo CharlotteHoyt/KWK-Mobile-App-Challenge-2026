@@ -26,7 +26,7 @@ struct FlowersView: View {
                     .font(.custom("Shrikhand-Regular", size: 36))
                     .fontWeight(.bold)
                     .foregroundColor(pink)
-                    .padding(.bottom)
+                    .padding(.bottom, -10)
                     .multilineTextAlignment(.center)
                 
                 Text("What Region of the US Do You Live In?")

@@ -24,7 +24,7 @@ struct CertificationsView: View {
                         .font(.custom("Shrikhand-Regular", size: 36))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
-                        .padding(.bottom)
+                        .padding(.bottom, -5)
                         .multilineTextAlignment(.center)
                     
                     HStack {
@@ -158,6 +158,11 @@ struct CertificationsView: View {
                             .cornerRadius(15)
                     }
                     .padding()
+                                        
+                    Text("(All Images From Respective Groups!)")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        // .padding(15)
                 }
                .padding(5)
             }

@@ -31,6 +31,7 @@ struct CertificationsView: View {
                         Image("rainforestAlliance")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(15)
                         
                         Spacer()
                             .frame(width: 20)
@@ -39,7 +40,7 @@ struct CertificationsView: View {
                             Text("Rainforest Alliance")
                                 .font(.custom("Shrikhand-Regular", size: 24))
                                 .fontWeight(.bold)
-                                .foregroundColor(pink)
+                                .foregroundColor(cream)
                                 .padding(.bottom, -5)
                                 .multilineTextAlignment(.center)
                             
@@ -59,15 +60,12 @@ struct CertificationsView: View {
                     }
                     .padding()
                     
-                    
-                    .padding(.bottom, 20)
-                    
                     HStack {
                         VStack {
                             Text("Veriflora")
                                 .font(.custom("Shrikhand-Regular", size: 24))
                                 .fontWeight(.bold)
-                                .foregroundColor(pink)
+                                .foregroundColor(cream)
                                 .padding(.bottom, -5)
                                 .multilineTextAlignment(.center)
                             
@@ -91,15 +89,15 @@ struct CertificationsView: View {
                         Image("veriflora")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(15)
                     }
                     .padding()
-                    
-                    .padding(.bottom, 20)
-                    
+                                        
                     HStack {
                         Image("fairTrade")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(15)
                         
                         Spacer()
                             .frame(width: 20)
@@ -108,7 +106,7 @@ struct CertificationsView: View {
                             Text("Fair Trade Certified")
                                 .font(.custom("Shrikhand-Regular", size: 24))
                                 .fontWeight(.bold)
-                                .foregroundColor(pink)
+                                .foregroundColor(cream)
                                 .padding(.bottom, -5)
                                 .multilineTextAlignment(.center)
                             
@@ -127,15 +125,13 @@ struct CertificationsView: View {
                         }
                     }
                     .padding()
-                                        
-                    .padding(.bottom, 20)
-                    
+                                                            
                     HStack {
                         VStack {
                             Text("Florverde")
                                 .font(.custom("Shrikhand-Regular", size: 24))
                                 .fontWeight(.bold)
-                                .foregroundColor(pink)
+                                .foregroundColor(cream)
                                 .padding(.bottom, -5)
                                 .multilineTextAlignment(.center)
                             
@@ -159,6 +155,7 @@ struct CertificationsView: View {
                         Image("florverde")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(15)
                     }
                     .padding()
                 }

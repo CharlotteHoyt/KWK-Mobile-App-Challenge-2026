@@ -21,115 +21,287 @@ struct FlowersView: View {
         ZStack {
             Color(darkGreen)
                 .ignoresSafeArea()
-            VStack {
-                Text("Find Sustainable Flowers")
-                    .font(.custom("Shrikhand-Regular", size: 36))
-                    .fontWeight(.bold)
-                    .foregroundColor(pink)
-                    .padding(.bottom, -10)
-                    .multilineTextAlignment(.center)
-                
-                Text("What Region of the US Do You Live In?")
-                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
-                    .foregroundColor(cream)
-                    .padding(15)
-                
-                Button("West/Pacific Northwest") {
-                    region += 1
-                }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(cream)
-                .padding(10)
-                .background(yellow)
-                .cornerRadius(15)
-                
-                .padding(.bottom, 5)
-                
-                Button("Northeast/Mid-Atlantic") {
-                    region += 2
-                }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(cream)
-                .padding(10)
-                .background(yellow)
-                .cornerRadius(15)
-                
-                .padding(.bottom, 5)
-                
-                Button("Midwest/Great Plains") {
-                    region += 3
-                }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(cream)
-                .padding(10)
-                .background(yellow)
-                .cornerRadius(15)
-                
-                .padding(.bottom, 5)
-                
-                Button("South/Southeast") {
-                    region += 4
-                }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(cream)
-                .padding(10)
-                .background(yellow)
-                .cornerRadius(15)
-                
-                .padding(.bottom, 5)
-                
-                Button("Mountain/Southwest") {
-                    region += 5
-                }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(cream)
-                .padding(10)
-                .background(yellow)
-                .cornerRadius(15)
-                                
-                Spacer()
-                    .frame(height: 50)
-                
-                Button("Suggest Flowers") {
-                    if region == 0 {
-                        flowerRecommendation = "Oops! Please pick a region and try again."
-                    } else if region == 1 {
-                        flowerRecommendation = "Try California Poppy, Yarrow, or Douglas Iris."
-                    } else if region == 2 {
-                        flowerRecommendation = "Try Wild Hydrangea, Eastern Columbine, or Oaklead Hydrangea."
-                    } else if region == 3 {
-                        flowerRecommendation = "Try Purple Coneflower, Black-Eyed Susan, or Golden Alexanders."
-                    } else if region == 4 {
-                        flowerRecommendation = "Try Turk's Cap Lily, Cardinal Flower, or Blue Mistflower."
-                    } else if region == 5 {
-                        flowerRecommendation = "Try Colorado Blue Columbine, Penstemon, or Goldenrod."
-                    } else {
-                        flowerRecommendation = "Oops! Please try again."
+            
+            ScrollView {
+                VStack {
+                    Text("Find Sustainable Flowers")
+                        .font(.custom("Shrikhand-Regular", size: 36))
+                        .fontWeight(.bold)
+                        .foregroundColor(pink)
+                        .padding(.bottom, -10)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("What Region of the US Do You Live In?")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(15)
+                    
+                    Button("West/Pacific Northwest") {
+                        region += 1
                     }
-                }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(darkGreen)
-                .padding(10)
-                .background(cream)
-                .cornerRadius(15)
-                            
-                Text(flowerRecommendation)
-                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
                     .foregroundColor(cream)
-                    .padding(15)
-                    .multilineTextAlignment(.center)
-                
-                Button("Reset Flower Finder") {
-                    region = 0
-                    flowerRecommendation = "..."
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("Northeast/Mid-Atlantic") {
+                        region += 2
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("Midwest/Great Plains") {
+                        region += 3
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("South/Southeast") {
+                        region += 4
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("Mountain/Southwest") {
+                        region += 5
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Button("Suggest Flowers") {
+                        if region == 0 {
+                            flowerRecommendation = "Oops! Please pick a region and try again."
+                        } else if region == 1 {
+                            flowerRecommendation = "Try California Poppy, Yarrow, or Douglas Iris."
+                        } else if region == 2 {
+                            flowerRecommendation = "Try Wild Hydrangea, Eastern Columbine, or Oaklead Hydrangea."
+                        } else if region == 3 {
+                            flowerRecommendation = "Try Purple Coneflower, Black-Eyed Susan, or Golden Alexanders."
+                        } else if region == 4 {
+                            flowerRecommendation = "Try Turk's Cap Lily, Cardinal Flower, or Blue Mistflower."
+                        } else if region == 5 {
+                            flowerRecommendation = "Try Colorado Blue Columbine, Penstemon, or Goldenrod."
+                        } else {
+                            flowerRecommendation = "Oops! Please try again."
+                        }
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(darkGreen)
+                    .padding(10)
+                    .background(cream)
+                    .cornerRadius(15)
+                                
+                    Text(flowerRecommendation)
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(15)
+                        .multilineTextAlignment(.center)
+                    
+                    Button("Reset Flower Finder") {
+                        region = 0
+                        flowerRecommendation = "..."
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(darkGreen)
+                    .padding(10)
+                    .background(cream)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 30)
+                    
+                    Text("Sourcing Tips")
+                        .font(.custom("Shrikhand-Regular", size: 36))
+                        .fontWeight(.bold)
+                        .foregroundColor(pink)
+                        .padding(.bottom, -10)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("1. Shop local! See what blooms you can find near you.")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
+                    
+                    Text("2. Embrace seasonality. Out-of-season flowers have a large toll on the environment.")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
+                    
+                    Text("3. Ask about wrapping/packaging. Avoid floral foam and plastic wrap when you can.")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
+                    
+                    Text("4. Look for sustainability certifications to support safe working conditions, environmental stewardship, etc.")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
+                    
+                    Text("5. Consider buying a plotted plant for a longer lifespan.")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
                 }
-                .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                .foregroundColor(darkGreen)
-                .padding(10)
-                .background(cream)
-                .cornerRadius(15)
+                .padding(5)
             }
-            .padding(5)
+            .frame(height: nil)
+            
+//            VStack {
+//                Text("Find Sustainable Flowers")
+//                    .font(.custom("Shrikhand-Regular", size: 36))
+//                    .fontWeight(.bold)
+//                    .foregroundColor(pink)
+//                    .padding(.bottom, -10)
+//                    .multilineTextAlignment(.center)
+//                
+//                Text("What Region of the US Do You Live In?")
+//                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+//                    .foregroundColor(cream)
+//                    .padding(15)
+//                
+//                Button("West/Pacific Northwest") {
+//                    region += 1
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(cream)
+//                .padding(10)
+//                .background(yellow)
+//                .cornerRadius(15)
+//                
+//                .padding(.bottom, 5)
+//                
+//                Button("Northeast/Mid-Atlantic") {
+//                    region += 2
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(cream)
+//                .padding(10)
+//                .background(yellow)
+//                .cornerRadius(15)
+//                
+//                .padding(.bottom, 5)
+//                
+//                Button("Midwest/Great Plains") {
+//                    region += 3
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(cream)
+//                .padding(10)
+//                .background(yellow)
+//                .cornerRadius(15)
+//                
+//                .padding(.bottom, 5)
+//                
+//                Button("South/Southeast") {
+//                    region += 4
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(cream)
+//                .padding(10)
+//                .background(yellow)
+//                .cornerRadius(15)
+//                
+//                .padding(.bottom, 5)
+//                
+//                Button("Mountain/Southwest") {
+//                    region += 5
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(cream)
+//                .padding(10)
+//                .background(yellow)
+//                .cornerRadius(15)
+//                                
+//                Spacer()
+//                    .frame(height: 50)
+//                
+//                Button("Suggest Flowers") {
+//                    if region == 0 {
+//                        flowerRecommendation = "Oops! Please pick a region and try again."
+//                    } else if region == 1 {
+//                        flowerRecommendation = "Try California Poppy, Yarrow, or Douglas Iris."
+//                    } else if region == 2 {
+//                        flowerRecommendation = "Try Wild Hydrangea, Eastern Columbine, or Oaklead Hydrangea."
+//                    } else if region == 3 {
+//                        flowerRecommendation = "Try Purple Coneflower, Black-Eyed Susan, or Golden Alexanders."
+//                    } else if region == 4 {
+//                        flowerRecommendation = "Try Turk's Cap Lily, Cardinal Flower, or Blue Mistflower."
+//                    } else if region == 5 {
+//                        flowerRecommendation = "Try Colorado Blue Columbine, Penstemon, or Goldenrod."
+//                    } else {
+//                        flowerRecommendation = "Oops! Please try again."
+//                    }
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(darkGreen)
+//                .padding(10)
+//                .background(cream)
+//                .cornerRadius(15)
+//                            
+//                Text(flowerRecommendation)
+//                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+//                    .foregroundColor(cream)
+//                    .padding(15)
+//                    .multilineTextAlignment(.center)
+//                
+//                Button("Reset Flower Finder") {
+//                    region = 0
+//                    flowerRecommendation = "..."
+//                }
+//                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                .foregroundColor(darkGreen)
+//                .padding(10)
+//                .background(cream)
+//                .cornerRadius(15)
+//                
+//                Text("Flowers Sourcing Tips")
+//                    .font(.custom("Shrikhand-Regular", size: 36))
+//                    .fontWeight(.bold)
+//                    .foregroundColor(pink)
+//                    .padding(.bottom, -10)
+//                    .multilineTextAlignment(.center)
+//                
+//                Text("1. Shop local!")
+//                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+//                    .foregroundColor(cream)
+//                    .padding(.horizontal, 15)
+//                    .padding(.vertical, 10)
+//                
+//                Text("2. Embrace seasonality. Out-of-season flowers have a large toll on the environment.")
+//                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+//                    .foregroundColor(cream)
+//                    .padding(.horizontal, 15)
+//                    .padding(.vertical, 10)
+//            }
+//            .padding(5)
         }
     }
 }

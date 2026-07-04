@@ -32,7 +32,6 @@ struct AboutView: View {
                         .foregroundColor(cream)
                         .padding(.horizontal, 15)
                         .padding(.vertical, 10)
-                        // .padding(15)
                     
                     Text("In the United States, many flower stems are imported from other countries. Comparable to the fast fashion industry, since flowers are highly perishable, the goal is to get a bloom from field to vase in just a few days. Long-haul flights and refrigeration mean these imported flowers are not so friendly on the planet.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))

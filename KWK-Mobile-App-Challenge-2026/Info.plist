@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Shrikhand-Regular.ttf</string>
+		<string>Imprima-Regular.ttf</string>
+		<string>BeVietnamPro-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>

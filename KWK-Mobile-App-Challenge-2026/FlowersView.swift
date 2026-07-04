@@ -15,13 +15,18 @@ struct FlowersView: View {
     let cream = Color(red: 247 / 255.0, green: 247 / 255.0, blue: 231 / 255.0)
     
     var body: some View {
-        VStack {
-            Text("Find Sustainable Flowers")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(darkGreen)
+        ZStack {
+            Color(darkGreen)
+                .ignoresSafeArea()
+            VStack {
+                Text("Find Sustainable Flowers")
+                    .font(.custom("Shrikhand-Regular", size: 50))
+                    .fontWeight(.bold)
+                    .foregroundColor(pink)
+                    .padding(.bottom)
+            }
+            .padding(5)
         }
-        .padding(5)
     }
 }
 

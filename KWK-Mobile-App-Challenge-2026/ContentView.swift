@@ -24,6 +24,7 @@ struct ContentView: View {
                     Image("icon2")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .padding(.bottom, -20)
                                         
                     Text("Slow Stems")
                         .font(.custom("Shrikhand-Regular", size: 50))
@@ -33,19 +34,21 @@ struct ContentView: View {
                     
                     NavigationLink(destination: FlowersView()) {
                         Text ("Find Sustainable Flowers")
-                            .font(.system(size: 18))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                            // .font(.custom("Imprima-Regular", size: 18))
                             .foregroundColor(darkGreen)
                             .padding(15)
                     }
                     .background(cream)
                     .cornerRadius(20)
-                    .fontWeight(.bold)
+                     .fontWeight(.bold)
                     
                     .padding(.bottom, 10)
                     
                     NavigationLink(destination: CertificationsView()) {
                         Text ("Sustainability Certifications to Look For")
-                            .font(.system(size: 18))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                            // .font(.custom("Imprima-Regular", size: 18))
                             .foregroundColor(darkGreen)
                             .padding(15)
                     }
@@ -57,7 +60,8 @@ struct ContentView: View {
                     
                     NavigationLink(destination: AboutView()) {
                         Text ("About the Slow Flowers Movement")
-                            .font(.system(size: 18))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                            // .font(.custom("Imprima-Regular", size: 18))
                             .foregroundColor(darkGreen)
                             .padding(15)
                     }

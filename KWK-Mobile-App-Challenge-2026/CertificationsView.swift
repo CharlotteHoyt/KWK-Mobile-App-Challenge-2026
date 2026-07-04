@@ -32,7 +32,9 @@ struct CertificationsView: View {
                     
                     Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
                         Text("Learn More")
-                            .font(.system(size: 14))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                            // .font(.custom("Imprima-Regular", size: 14))
+                            // .font(.system(size: 14))
                             .foregroundColor(cream)
                             .padding(10)
                     }
@@ -54,7 +56,9 @@ struct CertificationsView: View {
                     
                     Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
                         Text("Learn More")
-                            .font(.system(size: 14))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                            // .font(.custom("Imprima-Regular", size: 14))
+                            // .font(.system(size: 14))
                             .foregroundColor(cream)
                             .padding(10)
                     }
@@ -76,7 +80,9 @@ struct CertificationsView: View {
                     
                     Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
                         Text("Learn More")
-                            .font(.system(size: 14))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                            // .font(.custom("Imprima-Regular", size: 14))
+                            // .font(.system(size: 14))
                             .foregroundColor(cream)
                             .padding(10)
                     }
@@ -98,7 +104,9 @@ struct CertificationsView: View {
                     
                     Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
                         Text("Learn More")
-                            .font(.system(size: 14))
+                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                            // .font(.custom("Imprima-Regular", size: 14))
+                            // .font(.system(size: 14))
                             .foregroundColor(cream)
                             .padding(10)
                     }

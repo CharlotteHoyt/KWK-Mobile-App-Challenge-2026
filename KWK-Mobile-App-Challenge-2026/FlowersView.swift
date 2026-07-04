@@ -14,16 +14,109 @@ struct FlowersView: View {
     let pink = Color(red: 255 / 255.0, green: 137 / 255.0, blue: 91 / 255.0)
     let cream = Color(red: 247 / 255.0, green: 247 / 255.0, blue: 231 / 255.0)
     
+    @State private var region = 0
+    @State private var flowerRecommendation = "..."
+    
     var body: some View {
         ZStack {
             Color(darkGreen)
                 .ignoresSafeArea()
             VStack {
                 Text("Find Sustainable Flowers")
-                    .font(.custom("Shrikhand-Regular", size: 50))
+                    .font(.custom("Shrikhand-Regular", size: 28))
                     .fontWeight(.bold)
                     .foregroundColor(pink)
                     .padding(.bottom)
+                
+                Text("What Region of the US Do You Live In?")
+                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                    .foregroundColor(cream)
+                    .padding(15)
+                
+                Button("West/Pacific Northwest") {
+                    region += 1
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(cream)
+                .padding(10)
+                .background(yellow)
+                .cornerRadius(15)
+                
+                Button("Northeast/Mid-Atlantic") {
+                    region += 2
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(cream)
+                .padding(10)
+                .background(yellow)
+                .cornerRadius(15)
+                
+                Button("Midwest/Great Plains") {
+                    region += 3
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(cream)
+                .padding(10)
+                .background(yellow)
+                .cornerRadius(15)
+                
+                Button("South/Southeast") {
+                    region += 4
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(cream)
+                .padding(10)
+                .background(yellow)
+                .cornerRadius(15)
+                
+                Button("Mountain/Southeast") {
+                    region += 5
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(cream)
+                .padding(10)
+                .background(yellow)
+                .cornerRadius(15)
+                
+                Button("Suggest Flowers") {
+                    if region == 0 {
+                        flowerRecommendation = "Oops! Please pick a region and try again."
+                    } else if region == 1 {
+                        flowerRecommendation = "Try California Poppy, Yarrow, or Douglas Iris."
+                    } else if region == 2 {
+                        flowerRecommendation = "Try Wild Hydrangea, Eastern Columbine, or Oaklead Hydrangea."
+                    } else if region == 3 {
+                        flowerRecommendation = "Try Purple Coneflower, Black-Eyed Susan, or Golden Alexanders."
+                    } else if region == 4 {
+                        flowerRecommendation = "Try Turk's Cap Lily, Cardinal Flower, or Blue Mistflower."
+                    } else if region == 5 {
+                        flowerRecommendation = "Try Colorado Blue Columbine, Penstemon, or Goldenrod."
+                    } else {
+                        flowerRecommendation = "Oops! Please try again."
+                    }
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(darkGreen)
+                .padding(10)
+                .background(cream)
+                .cornerRadius(15)
+                            
+                Text(flowerRecommendation)
+                    .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                    .foregroundColor(cream)
+                    .padding(15)
+                    .multilineTextAlignment(.center)
+                
+                Button("Reset Flower Finder") {
+                    region = 0
+                    flowerRecommendation = "..."
+                }
+                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                .foregroundColor(darkGreen)
+                .padding(10)
+                .background(cream)
+                .cornerRadius(15)
+                
             }
             .padding(5)
         }

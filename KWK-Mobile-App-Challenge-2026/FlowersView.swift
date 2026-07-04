@@ -17,6 +17,9 @@ struct FlowersView: View {
     @State private var region = 0
     @State private var flowerRecommendation = "..."
     
+    @State private var season = 0
+    @State private var flowerRecommendation2 = "..."
+    
     var body: some View {
         ZStack {
             Color(darkGreen)
@@ -24,7 +27,7 @@ struct FlowersView: View {
             
             ScrollView {
                 VStack {
-                    Text("Find Sustainable Flowers")
+                    Text("Find Flowers by Region")
                         .font(.custom("Shrikhand-Regular", size: 36))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
@@ -121,7 +124,7 @@ struct FlowersView: View {
                         .padding(15)
                         .multilineTextAlignment(.center)
                     
-                    Button("Reset Flower Finder") {
+                    Button("Reset Regional Flower Finder") {
                         region = 0
                         flowerRecommendation = "..."
                     }
@@ -132,6 +135,118 @@ struct FlowersView: View {
                     .cornerRadius(15)
                     
                     .padding(.bottom, 30)
+                    
+                    //
+                    
+                    Divider()
+                        .overlay(lightGreen)
+                        .frame(height: 10)
+                        .padding(10)
+                    
+                    Text("Find Flowers by Season")
+                        .font(.custom("Shrikhand-Regular", size: 36))
+                        .fontWeight(.bold)
+                        .foregroundColor(pink)
+                        .padding(.bottom, -10)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("What Season Is It in the US?")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(15)
+                    
+                    Button("Spring (March - May)") {
+                        season += 1
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("Summer (June - August)") {
+                        season += 2
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("Autumn (September - November)") {
+                        season += 3
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                    
+                    Button("Winter (December - February)") {
+                        season += 4
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(cream)
+                    .padding(10)
+                    .background(yellow)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 5)
+                                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Button("Suggest Flowers") {
+                        if season == 0 {
+                            flowerRecommendation2 = "Oops! Please pick a season and try again."
+                        } else if season == 1 {
+                            flowerRecommendation2 = "Seasonally available flowers include Tulips, Lilacs, Peonies, Daffodils, and Hyacinths."
+                        } else if season == 2 {
+                            flowerRecommendation2 = "Seasonally available flowers include Hydrangeas, Zinnias, Dahlias, Sunflowers, and Roses."
+                        } else if season == 3 {
+                            flowerRecommendation2 = "Seasonally available flowers include Chrysanthemums, Asters, Dahlias, and Sunflowers."
+                        } else if season == 4 {
+                            flowerRecommendation2 = "Seasonally available flowers include Hellebores, Camellias, Poinsettias, and Amaryllis."
+                        } else {
+                            flowerRecommendation = "Oops! Please try again."
+                        }
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(darkGreen)
+                    .padding(10)
+                    .background(cream)
+                    .cornerRadius(15)
+                                
+                    Text(flowerRecommendation2)
+                        .font(.custom("BeVietnamPro-SemiBold", size: 18))
+                        .foregroundColor(cream)
+                        .padding(15)
+                        .multilineTextAlignment(.center)
+                    
+                    Button("Reset Seasonal Flower Finder") {
+                        season = 0
+                        flowerRecommendation2 = "..."
+                    }
+                    .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                    .foregroundColor(darkGreen)
+                    .padding(10)
+                    .background(cream)
+                    .cornerRadius(15)
+                    
+                    .padding(.bottom, 30)
+                    
+                    Divider()
+                        .overlay(lightGreen)
+                        .frame(height: 10)
+                        .padding(10)
+                    
+                    //
                     
                     Text("Sourcing Tips")
                         .font(.custom("Shrikhand-Regular", size: 36))

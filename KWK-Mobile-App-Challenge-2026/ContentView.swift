@@ -24,7 +24,8 @@ struct ContentView: View {
                     Image("icon2")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
-                        .padding(.bottom, -20)
+                        .padding()
+                        .padding(.bottom, -40)
                                         
                     Text("Slow Stems")
                         .font(.custom("Shrikhand-Regular", size: 50))
@@ -41,7 +42,7 @@ struct ContentView: View {
                     .background(cream)
                     .cornerRadius(20)
                     
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 5)
                     
                     NavigationLink(destination: CertificationsView()) {
                         Text ("Sustainability Certifications to Look For")
@@ -52,7 +53,7 @@ struct ContentView: View {
                     .background(cream)
                     .cornerRadius(20)
                     
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 5)
                     
                     NavigationLink(destination: AboutView()) {
                         Text ("About the Slow Flowers Movement")

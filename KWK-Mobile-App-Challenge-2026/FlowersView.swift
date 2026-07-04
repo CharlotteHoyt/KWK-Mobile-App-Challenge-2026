@@ -43,6 +43,8 @@ struct FlowersView: View {
                 .background(yellow)
                 .cornerRadius(15)
                 
+                .padding(.bottom, 5)
+                
                 Button("Northeast/Mid-Atlantic") {
                     region += 2
                 }
@@ -51,6 +53,8 @@ struct FlowersView: View {
                 .padding(10)
                 .background(yellow)
                 .cornerRadius(15)
+                
+                .padding(.bottom, 5)
                 
                 Button("Midwest/Great Plains") {
                     region += 3
@@ -61,6 +65,8 @@ struct FlowersView: View {
                 .background(yellow)
                 .cornerRadius(15)
                 
+                .padding(.bottom, 5)
+                
                 Button("South/Southeast") {
                     region += 4
                 }
@@ -70,6 +76,8 @@ struct FlowersView: View {
                 .background(yellow)
                 .cornerRadius(15)
                 
+                .padding(.bottom, 5)
+                
                 Button("Mountain/Southeast") {
                     region += 5
                 }
@@ -78,7 +86,7 @@ struct FlowersView: View {
                 .padding(10)
                 .background(yellow)
                 .cornerRadius(15)
-                
+                                
                 Spacer()
                     .frame(height: 50)
                 

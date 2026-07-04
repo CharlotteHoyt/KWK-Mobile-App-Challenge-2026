@@ -40,6 +40,30 @@ struct AboutView: View {
                         .padding(.horizontal, 15)
                         .padding(.vertical, 10)
                     
+//                    Text(". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.")
+//                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
+//                        .foregroundColor(yellow)
+//                        .padding(.horizontal, 15)
+//                        .padding(.vertical, 10)
+                    
+//                    Text("°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･")
+//                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
+//                        .foregroundColor(yellow)
+//                        .padding(.horizontal, 15)
+//                        .padding(.vertical, 10)
+                    
+//                    Text("°❀.ೃ࿔*°❀.ೃ࿔*")
+//                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
+//                        .foregroundColor(yellow)
+//                        .padding(.horizontal, 15)
+//                        .padding(.vertical, 10)
+                    
+                    Text("✿ ✿ ✿")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
+                        .foregroundColor(yellow)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
+                    
                     Text("Furthermore, the working conditions on some of these flower farms are poor. Women make up the majority of the floriculture workforce and face challenges such as gender discrimination, low wages, and exposure to dangerous chemicals.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)
@@ -49,6 +73,12 @@ struct AboutView: View {
                     Text("Since ornamental flowers are not as closely regulated as food, they can be treated with harsh chemicals many people wouldn’t be okay eating. These chemicals pose health risks to farmers, consumers, and wildlife near the flower farms.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 10)
+                    
+                    Text("✿ ✿ ✿")
+                        .font(.custom("BeVietnamPro-SemiBold", size: 26))
+                        .foregroundColor(yellow)
                         .padding(.horizontal, 15)
                         .padding(.vertical, 10)
                     

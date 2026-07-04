@@ -78,7 +78,7 @@ struct FlowersView: View {
                 
                 .padding(.bottom, 5)
                 
-                Button("Mountain/Southeast") {
+                Button("Mountain/Southwest") {
                     region += 5
                 }
                 .font(.custom("BeVietnamPro-SemiBold", size: 14))

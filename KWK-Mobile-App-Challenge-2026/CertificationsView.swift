@@ -20,25 +20,50 @@ struct CertificationsView: View {
                 Color(darkGreen)
                     .ignoresSafeArea()
                 VStack {
+                    Text("Look for These!")
+                        .font(.custom("Shrikhand-Regular", size: 36))
+                        .fontWeight(.bold)
+                        .foregroundColor(pink)
+                        .padding(.bottom)
+                        .multilineTextAlignment(.center)
+                    
                     Image("rainforestAlliance")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    Text("Rainforest Alliance")
-                        .font(.custom("Shrikhand-Regular", size: 28))
+                    HStack {
+                        Text("Rainforest Alliance")
+                            .font(.custom("Shrikhand-Regular", size: 24))
+                            .fontWeight(.bold)
+                            .foregroundColor(pink)
+                            // .padding(.bottom, -5)
+                        
+                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                            Text("Learn More")
+                                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                                .foregroundColor(cream)
+                                .padding(10)
+                        }
+                        .background(yellow)
+                        .cornerRadius(15)
                         .fontWeight(.bold)
-                        .foregroundColor(pink)
-                        .padding(.bottom, -5)
-                    
-                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                        Text("Learn More")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                            .foregroundColor(cream)
-                            .padding(10)
                     }
-                    .background(yellow)
-                    .cornerRadius(15)
-                    .fontWeight(.bold)
+                    
+//                    Text("Rainforest Alliance")
+//                        .font(.custom("Shrikhand-Regular", size: 28))
+//                        .fontWeight(.bold)
+//                        .foregroundColor(pink)
+//                        .padding(.bottom, -5)
+//                    
+//                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                        Text("Learn More")
+//                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                            .foregroundColor(cream)
+//                            .padding(10)
+//                    }
+//                    .background(yellow)
+//                    .cornerRadius(15)
+//                    .fontWeight(.bold)
                     
                     .padding(.bottom, 20)
                     
@@ -46,21 +71,39 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    Text("Veriflora")
-                        .font(.custom("Shrikhand-Regular", size: 28))
+                    HStack {
+                        Text("Veriflora")
+                            .font(.custom("Shrikhand-Regular", size: 24))
+                            .fontWeight(.bold)
+                            .foregroundColor(pink)
+                            // .padding(.bottom, -5)
+                        
+                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                            Text("Learn More")
+                                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                                .foregroundColor(cream)
+                                .padding(10)
+                        }
+                        .background(yellow)
+                        .cornerRadius(15)
                         .fontWeight(.bold)
-                        .foregroundColor(pink)
-                        .padding(.bottom, -5)
-                    
-                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                        Text("Learn More")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                            .foregroundColor(cream)
-                            .padding(10)
                     }
-                    .background(yellow)
-                    .cornerRadius(15)
-                    .fontWeight(.bold)
+                    
+//                    Text("Veriflora")
+//                        .font(.custom("Shrikhand-Regular", size: 28))
+//                        .fontWeight(.bold)
+//                        .foregroundColor(pink)
+//                        .padding(.bottom, -5)
+//                    
+//                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                        Text("Learn More")
+//                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                            .foregroundColor(cream)
+//                            .padding(10)
+//                    }
+//                    .background(yellow)
+//                    .cornerRadius(15)
+//                    .fontWeight(.bold)
                     
                     .padding(.bottom, 20)
                                         
@@ -68,23 +111,43 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    Text("Fair Trade")
-                        .font(.custom("Shrikhand-Regular", size: 28))
+                    HStack {
+                        Text("Fair Trade Certified")
+                            .font(.custom("Shrikhand-Regular", size: 24))
+                            .fontWeight(.bold)
+                            .foregroundColor(pink)
+                            // .padding(.bottom, -5)
+                        
+                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                            Text("Learn More")
+                                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                                // .font(.custom("Imprima-Regular", size: 14))
+                                // .font(.system(size: 14))
+                                .foregroundColor(cream)
+                                .padding(10)
+                        }
+                        .background(yellow)
+                        .cornerRadius(15)
                         .fontWeight(.bold)
-                        .foregroundColor(pink)
-                        .padding(.bottom, -5)
-                    
-                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                        Text("Learn More")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                            // .font(.custom("Imprima-Regular", size: 14))
-                            // .font(.system(size: 14))
-                            .foregroundColor(cream)
-                            .padding(10)
                     }
-                    .background(yellow)
-                    .cornerRadius(15)
-                    .fontWeight(.bold)
+                    
+//                    Text("Fair Trade")
+//                        .font(.custom("Shrikhand-Regular", size: 28))
+//                        .fontWeight(.bold)
+//                        .foregroundColor(pink)
+//                        .padding(.bottom, -5)
+//                    
+//                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                        Text("Learn More")
+//                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                            // .font(.custom("Imprima-Regular", size: 14))
+//                            // .font(.system(size: 14))
+//                            .foregroundColor(cream)
+//                            .padding(10)
+//                    }
+//                    .background(yellow)
+//                    .cornerRadius(15)
+//                    .fontWeight(.bold)
 
                     .padding(.bottom, 20)
                     
@@ -92,21 +155,39 @@ struct CertificationsView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                     
-                    Text("Florverde")
-                        .font(.custom("Shrikhand-Regular", size: 28))
+                    HStack {
+                        Text("Florverde")
+                            .font(.custom("Shrikhand-Regular", size: 24))
+                            .fontWeight(.bold)
+                            .foregroundColor(pink)
+                            // .padding(.bottom, -5)
+                        
+                        Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+                            Text("Learn More")
+                                .font(.custom("BeVietnamPro-SemiBold", size: 14))
+                                .foregroundColor(cream)
+                                .padding(10)
+                        }
+                        .background(yellow)
+                        .cornerRadius(15)
                         .fontWeight(.bold)
-                        .foregroundColor(pink)
-                        .padding(.bottom, -5)
-                    
-                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
-                        Text("Learn More")
-                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
-                            .foregroundColor(cream)
-                            .padding(10)
                     }
-                    .background(yellow)
-                    .cornerRadius(15)
-                    .fontWeight(.bold)
+                    
+//                    Text("Florverde")
+//                        .font(.custom("Shrikhand-Regular", size: 28))
+//                        .fontWeight(.bold)
+//                        .foregroundColor(pink)
+//                        .padding(.bottom, -5)
+//                    
+//                    Link(destination: URL(string: "https://www.rainforest-alliance.org/insights/rainforest-alliance-certified-ferns-flowers/")!) {
+//                        Text("Learn More")
+//                            .font(.custom("BeVietnamPro-SemiBold", size: 14))
+//                            .foregroundColor(cream)
+//                            .padding(10)
+//                    }
+//                    .background(yellow)
+//                    .cornerRadius(15)
+//                    .fontWeight(.bold)
                 }
                .padding(5)
             }

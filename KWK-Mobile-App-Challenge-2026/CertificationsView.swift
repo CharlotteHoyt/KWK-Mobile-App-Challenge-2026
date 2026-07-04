@@ -100,12 +100,12 @@ struct CertificationsView: View {
                     .padding(.bottom, 20)
                     
                     HStack {
-                        Image("veriflora")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Spacer()
-                            .frame(width: 20)
+//                        Image("veriflora")
+//                            .resizable(resizingMode: .stretch)
+//                            .aspectRatio(contentMode: .fit)
+//                        
+//                        Spacer()
+//                            .frame(width: 20)
                         
                         VStack {
                             Text("Veriflora")
@@ -128,6 +128,13 @@ struct CertificationsView: View {
                             .cornerRadius(15)
                             .fontWeight(.bold)
                         }
+                        
+                        Spacer()
+                            .frame(width: 20)
+                        
+                        Image("veriflora")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
                     }
                     .padding()
                     
@@ -226,12 +233,12 @@ struct CertificationsView: View {
                     .padding(.bottom, 20)
                     
                     HStack {
-                        Image("florverde")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                        
-                        Spacer()
-                            .frame(width: 20)
+//                        Image("florverde")
+//                            .resizable(resizingMode: .stretch)
+//                            .aspectRatio(contentMode: .fit)
+//                        
+//                        Spacer()
+//                            .frame(width: 20)
                         
                         VStack {
                             Text("Florverde")
@@ -254,6 +261,13 @@ struct CertificationsView: View {
                             .cornerRadius(15)
                             .fontWeight(.bold)
                         }
+                        
+                        Spacer()
+                            .frame(width: 20)
+                        
+                        Image("florverde")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
                     }
                     .padding()
                     

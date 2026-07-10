@@ -22,6 +22,7 @@ struct AboutView: View {
                 .ignoresSafeArea()
             ScrollView {
                 VStack {
+                    // Title text.
                     Text("About the Slow Flowers Movement")
                         .font(.custom("Shrikhand-Regular", size: 36))
                         .fontWeight(.bold)
@@ -29,6 +30,8 @@ struct AboutView: View {
                         .padding(.bottom, -10)
                         .multilineTextAlignment(.center)
                     
+                    // A description of the issue, broken into sections.
+                    // Ideas are separated by decorative flower symbols.
                     Text("Many people see flowers as a \"gift from nature.\" Flower bouquets are ingrained in many human celebrations, from weddings and birthdays to Valentine's Day and Mother's Day. But, cut flower stems have a hidden and heavy social and environmental impact.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)

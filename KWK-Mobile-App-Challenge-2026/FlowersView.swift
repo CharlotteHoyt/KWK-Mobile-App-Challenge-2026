@@ -15,10 +15,14 @@ struct FlowersView: View {
     let pink = Color(red: 255 / 255.0, green: 137 / 255.0, blue: 91 / 255.0)
     let cream = Color(red: 247 / 255.0, green: 247 / 255.0, blue: 231 / 255.0)
     
+    // Track the selected region.
     @State private var region = 0
+    // Placeholder for flower recommendation based on region.
     @State private var flowerRecommendation = "..."
     
+    // Track the selected season.
     @State private var season = 0
+    // Placeholder for flower recommendation based on season.
     @State private var flowerRecommendation2 = "..."
     
     var body: some View {
@@ -27,8 +31,10 @@ struct FlowersView: View {
             Color(darkGreen)
                 .ignoresSafeArea()
             
+            // Vertical scrollable region since the page is long.
             ScrollView {
                 VStack {
+                    // Regional flower finder.
                     Text("Find Flowers by Region")
                         .font(.custom("Shrikhand-Regular", size: 36))
                         .fontWeight(.bold)
@@ -40,6 +46,10 @@ struct FlowersView: View {
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)
                         .padding(15)
+                    
+                    // Answer choices.
+                    // Each button adds some amount to the region "counter."
+                    // Then, a corresponding suggestion can be displayed.
                     
                     Button("West/Pacific Northwest") {
                         region += 1
@@ -97,6 +107,7 @@ struct FlowersView: View {
                     Spacer()
                         .frame(height: 50)
                     
+                    // On click, update the flowerRecommendation text to display the appropriate suggestion.
                     Button("Suggest Flowers") {
                         if region == 0 {
                             flowerRecommendation = "Oops! Please pick a region and try again."
@@ -126,6 +137,7 @@ struct FlowersView: View {
                         .padding(15)
                         .multilineTextAlignment(.center)
                     
+                    // Reset the variables to their default values.
                     Button("Reset Regional Flower Finder") {
                         region = 0
                         flowerRecommendation = "..."
@@ -138,11 +150,13 @@ struct FlowersView: View {
                     
                     .padding(.bottom, 30)
                     
+                    // A thin green line to separate sections.
                     Divider()
                         .overlay(lightGreen)
                         .frame(height: 10)
                         .padding(10)
                     
+                    // Seasonal flower finder.
                     Text("Find Flowers by Season")
                         .font(.custom("Shrikhand-Regular", size: 36))
                         .fontWeight(.bold)
@@ -154,6 +168,10 @@ struct FlowersView: View {
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))
                         .foregroundColor(cream)
                         .padding(15)
+                    
+                    // Answer choices.
+                    // Each button adds some amount to the season "counter."
+                    // Then, a corresponding suggestion can be displayed.
                     
                     Button("Spring (March - May)") {
                         season += 1
@@ -202,6 +220,7 @@ struct FlowersView: View {
                     Spacer()
                         .frame(height: 50)
                     
+                    // On click, update the flowerRecommendation text to display the appropriate suggestion.
                     Button("Suggest Flowers") {
                         if season == 0 {
                             flowerRecommendation2 = "Oops! Please pick a season and try again."
@@ -229,6 +248,7 @@ struct FlowersView: View {
                         .padding(15)
                         .multilineTextAlignment(.center)
                     
+                    // Reset the variables to their default values.
                     Button("Reset Seasonal Flower Finder") {
                         season = 0
                         flowerRecommendation2 = "..."
@@ -241,18 +261,21 @@ struct FlowersView: View {
                     
                     .padding(.bottom, 30)
                     
+                    // A thin green line to separate sections.
                     Divider()
                         .overlay(lightGreen)
                         .frame(height: 10)
                         .padding(10)
                     
-                    
+                    // Flower stem sourcing tips.
                     Text("Sourcing Tips")
                         .font(.custom("Shrikhand-Regular", size: 36))
                         .fontWeight(.bold)
                         .foregroundColor(pink)
                         .padding(.bottom, -10)
                         .multilineTextAlignment(.center)
+                    
+                    // Numbered tips.
                     
                     Text("1. Shop local! See what blooms you can find near you.")
                         .font(.custom("BeVietnamPro-SemiBold", size: 18))

@@ -136,8 +136,6 @@ struct FlowersView: View {
                     
                     .padding(.bottom, 30)
                     
-                    //
-                    
                     Divider()
                         .overlay(lightGreen)
                         .frame(height: 10)
@@ -246,7 +244,6 @@ struct FlowersView: View {
                         .frame(height: 10)
                         .padding(10)
                     
-                    //
                     
                     Text("Sourcing Tips")
                         .font(.custom("Shrikhand-Regular", size: 36))

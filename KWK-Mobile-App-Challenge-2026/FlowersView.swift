@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FlowersView: View {
+    // Define color palette.
     let darkGreen = Color(red: 46 / 255.0, green: 111 / 255.0, blue: 64 / 255.0)
     let lightGreen = Color(red: 155 / 255.0, green: 210 / 255.0, blue: 64 / 255.0)
     let yellow = Color(red: 246 / 255.0, green: 173 / 255.0, blue: 6 / 255.0)
@@ -22,6 +23,7 @@ struct FlowersView: View {
     
     var body: some View {
         ZStack {
+            // Background color (fill to all edges of the screen).
             Color(darkGreen)
                 .ignoresSafeArea()
             
